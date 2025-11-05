@@ -1,0 +1,186 @@
+.heading
+{
+text-align: center; 
+    
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}   
+/*Navbar Styling*/
+.Navbar {
+background-color: #dcdcdc;   
+    padding: 26px;
+  text-align: center; 
+  
+}
+/*Main Container Styling*/
+.Main-container{
+    display: flex;
+
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;  
+}
+/*Left and Right Container Styling*/
+.container1,
+.container2 {
+    background-color: #DADFFD;
+  padding: 30px 60px;
+  border-radius: 10px;
+margin-top: 46px;
+
+  
+  width: 350px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.reset-container {
+  margin-top: 25px;
+  text-align: center;
+  width: 100%;
+}
+.qrcode-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 90px;
+    gap: 20px;
+    width: 100%;
+    
+}
+
+    
+     
+/*Input Field Styling*/
+.input-container {
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 2px;
+}
+.input-container input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+/*copy and toggle button styling*/
+.copybtn,
+.toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #555; 
+  cursor: pointer;
+  font-size: 16px;
+}
+.copybtn:hover,
+.toggle-btn:hover {
+  color: #000;
+}
+/*QR Code Section Styling*/
+.qrcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    width: 100%;
+    margin-top: 50px;
+}
+#qr-code-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  #qr-download-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.qr-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.main-btn {
+  background-color: #6674CC;
+  border: none;
+  padding: 10px 40px;
+  font-size: large;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+.main-btn:hover {
+  background: #0056b3;
+}
+.reset-container:hover {
+  background: #c0392b;
+}
+.footer {
+  background-color: #dcdcdc;
+  font-weight: bold;
+  color: rgb(19, 17, 17);
+    
+    
+  text-align: center; 
+  padding: 33px;
+ margin-top: 80px;  
+}
+.img1 {
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 7px;
+    background-color: white;
+}
+/*Responsive Design*/
+@media screen  and(max-width:447px){
+  .body{
+    width: 50%;
+    flex-direction: row;
+  }
+}
+@media screen  and(min-width:448px)and(max-width:894px){
+  .body{
+    width: 75%;
+    flex-direction: row;
+
+  }
+}
+@media screen and(min-width:894px)and (max-width:1326px){
+.body{
+  width:100%;
+  flex-direction: row;
+  }  
+}
+  
+  
+
+
+  
+
+  
+
+
+
+  
+
+
+  
+
+  
+    
