@@ -1,15 +1,22 @@
 import express from "express";
-import mongoose from "mongoose";
+import path from "path";
+import { fileURLToPath } from "url";
+import staticRoute from "./routes/staticRoute.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(express.json());
 
-app.get("/", (req,res)=>{
-    res.json({msg:"API hit"});
-})
+// serve static files
+app.use(express.static(path.join(__dirname, "views")));
 
-const PORT = 8000
+// use router
+app.use("/", staticRoute);
 
-app.listen(PORT, ()=>{
-    console.log(`Server is running at ${PORT}. ✅` );
-})
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running at ${PORT}. ✅`);
+});
